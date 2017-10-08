@@ -6,10 +6,10 @@
         <title>Les Films de Plein Air</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <script
-                src="https://code.jquery.com/jquery-3.2.1.min.js"
-                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-                crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
     </head>
 
     <body>
@@ -33,20 +33,21 @@
                             </div>
                             <div class="collapse navbar-collapse" id="navbar-collapse-target">
                                 <ul class="nav navbar-nav col-md-8 col-lg-8">
-                                    <li><a href="#">ACTUALITE</a></li>
-                                    <li><a href="#">LE FESTIVAL</a></li>
-                                    <li><a href="#">PROGRAMMATION</a></li>
-                                    <li><a href="#">CONTACT</a></li>
+                                    <li><a href="#" id="lienActu">ACTUALITE</a></li>
+                                    <li><a href="#" id="lienFest">LE FESTIVAL</a></li>
+                                    <li><a href="#" id="lienProg">PROGRAMMATION</a></li>
+                                    <li><a href="#" id="lienContact">CONTACT</a></li>
                                 </ul>
                             </div>
                         </div>
                     </nav>
                 </div>
+
                 <div class="row" id="corps">
                     <div class="container-fluid col-md-offset-1 col-md-10">
                         <div class="pageActu" id="pageActualite">
                             <div class="row">
-                                <div class="col-md-offset-2 col-md-8 actu left">
+                                <div class="col-md-offset-2 col-md-8 actu">
                                     <h2>ACTU 1</h2>
                                     <h4>02/10/2017</h4>
                                     <p>
@@ -54,8 +55,23 @@
                                         Praesent tempus metus rhoncus sodales scelerisque. Cras sagittis quam et sagittis mollis.
                                         Integer mollis sodales efficitur. Mauris vel dolor odio.
                                         Vivamus quam ipsum, dignissim ut convallis eu, malesuada vitae lectus.
-                                        Suspendisse ultricies at sapien quis rutrum...<a href="#" >Lire la suite</a>
+                                        Suspendisse ultricies at sapien quis rutrum...
+                                        <a href="#modal1" class="btn" role="button" data-toggle="modal">Lire la suite</a>
                                     </p>
+                                    <div id="modal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Modal Header</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Some text in the modal.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
@@ -84,28 +100,66 @@
                                     </p>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-offset-2 col-md-8 actu">
+                                    <h2>ACTU 4</h2>
+                                    <h4>02/10/2017</h4>
+                                    <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel ex ante. Proin vitae sem felis.
+                                    Praesent tempus metus rhoncus sodales scelerisque. Cras sagittis quam et sagittis mollis.
+                                    Integer mollis sodales efficitur. Mauris vel dolor odio.
+                                    Vivamus quam ipsum, dignissim ut convallis eu, malesuada vitae lectus.
+                                    Suspendisse ultricies at sapien quis rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-offset-2 col-md-8 actu">
+                                    <h2>ACTU 5</h2>
+                                    <h4>02/10/2017</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel ex ante. Proin vitae sem felis.
+                                        Praesent tempus metus rhoncus sodales scelerisque. Cras sagittis quam et sagittis mollis.
+                                        Integer mollis sodales efficitur. Mauris vel dolor odio.
+                                        Vivamus quam ipsum, dignissim ut convallis eu, malesuada vitae lectus.
+                                        Suspendisse ultricies at sapien quis rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
                         </div>
+
                         <div class="pageFestival" id="pageFestival">
+                            <div class="row">
+                                <div class="col-md-offset-2 col-md-8 fest">
 
+                                </div>
+                            </div>
                         </div>
-                        <div class="pageProg" id="pageProgrammation">
 
+                        <div class="pageProg" id="pageProgrammation">
+                            <div class="row">
+                                <div class="col-md-offset-2 col-md-8 prog">
+
+                                </div>
+                            </div>
                         </div>
                         <div class="pageContact" id="pageContact">
+                            <div class="row">
+                                <div class="col-md-offset-2 col-md-8 contact">
 
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row" id="pied">
-                    <nav class="navbar navbar-fixed-bottom col-sm-12">
-                        <div class="container-fluid" style="display: flex; padding: 0; margin: 5px; height: 30px">
-                            <ul class="nav navbar-nav col-xs-9 col-sm-9 col-md-9 col-lg-12">
-                                <li>Copyright 2017 - Les Festivals</li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+
+                <nav class="container-fluid col-sm-12 navbar-fixed-bottom" id="footer">
+                    <ul class="col-xs-9 col-sm-9 col-md-9 col-lg-12">
+                        <li>Copyright 2017 - Les Festivals</li>
+                    </ul>
+                </nav>
             </div>
         </div>
+        <script src="js/script.js"></script>
     </body>
 </html>
