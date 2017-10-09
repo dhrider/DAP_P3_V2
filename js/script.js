@@ -1,30 +1,31 @@
 $(document).ready(function () {
+
     $('#lienActu').click(function () {
-        $('.pageActu').show();
-        $('.pageFestival').hide();
-        $('.pageProg').hide();
-        $('.pageContact').hide();
+        $('.pageActu').removeClass('hide');
+        $('.pageFestival').addClass('hide');
+        $('.pageProg').addClass('hide');
+        $('.pageContact').addClass('hide');
     });
 
     $('#lienFest').click(function () {
-        $('.pageActu').hide();
-        $('.pageFestival').show();
-        $('.pageProg').hide();
-        $('.pageContact').hide();
+        $('.pageActu').addClass('hide');
+        $('.pageFestival').removeClass('hide');
+        $('.pageProg').addClass('hide');
+        $('.pageContact').addClass('hide');
     });
 
     $('#lienProg').click(function () {
-        $('.pageActu').hide();
-        $('.pageFestival').hide();
-        $('.pageProg').show();
-        $('.pageContact').hide();
+        $('.pageActu').addClass('hide');
+        $('.pageFestival').addClass('hide');
+        $('.pageProg').removeClass('hide');
+        $('.pageContact').addClass('hide');
     });
 
     $('#lienContact').click(function () {
-        $('.pageActu').hide();
-        $('.pageFestival').hide();
-        $('.pageProg').hide();
-        $('.pageContact').show();
+        $('.pageActu').addClass('hide');
+        $('.pageFestival').addClass('hide');
+        $('.pageProg').addClass('hide');
+        $('.pageContact').removeClass('hide');
     });
 });
 
