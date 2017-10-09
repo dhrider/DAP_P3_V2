@@ -27,6 +27,7 @@ $(document).ready(function () {
         $('.pageProg').addClass('hide');
         $('.pageContact').removeClass('hide');
     });
+
 });
 
 

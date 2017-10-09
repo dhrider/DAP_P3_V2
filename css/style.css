@@ -90,11 +90,15 @@ p {
     color: black;
 }
 
-.actu, .fest {
+.row {
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.actu, .fest, .prog, .contact {
     background-color: #B2DAF8;
     opacity: 0.85;
     margin-top: 10px;
-    margin-bottom: 40px;
     border-radius: 25px;
 }
 
