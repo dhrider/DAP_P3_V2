@@ -24,7 +24,7 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <div class="navbar-brand" style="display: flex; padding: 0; margin: 5px; height: 30px">
+                                <div class="navbar-brand">
                                     <ul class="nav navbar-nav">
                                         <li><img src="image/logo_film.jpg" id="logo"></li>
                                         <li><h3 id="titreEntete">Les Films de Plein Air</h3></li>
@@ -104,11 +104,11 @@
                                 <h2>ACTU 4</h2>
                                 <h4>02/10/2017</h4>
                                 <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel ex ante. Proin vitae sem felis.
-                                Praesent tempus metus rhoncus sodales scelerisque. Cras sagittis quam et sagittis mollis.
-                                Integer mollis sodales efficitur. Mauris vel dolor odio.
-                                Vivamus quam ipsum, dignissim ut convallis eu, malesuada vitae lectus.
-                                Suspendisse ultricies at sapien quis rutrum.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel ex ante. Proin vitae sem felis.
+                                    Praesent tempus metus rhoncus sodales scelerisque. Cras sagittis quam et sagittis mollis.
+                                    Integer mollis sodales efficitur. Mauris vel dolor odio.
+                                    Vivamus quam ipsum, dignissim ut convallis eu, malesuada vitae lectus.
+                                    Suspendisse ultricies at sapien quis rutrum.
                                 </p>
                             </div>
                         </div>
@@ -128,11 +128,12 @@
                     </div>
 
                     <div class="container-fluid col-md-offset-1 col-md-10 pageFestival hide" id="pageFestival">
-                        <div class="row">
+                        <div class="row fest">
+                            <h2>Le cadre :</h2>
                             <div class="col-md-4">
                                 <img src="image/fest01.jpg" class="imageFest">
                             </div>
-                            <div class="col-md-offset-1 col-md-7 fest">
+                            <div class="col-md-8">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Suspendisse varius eget risus id dapibus. Donec scelerisque,
@@ -148,8 +149,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-7 fest">
+
+                        <div class="row fest">
+                            <h2>Le matériel :</h2>
+                            <div class="col-md-8">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Curabitur mollis tempus nibh fringilla elementum. In fringilla, erat et maximus pharetra,
@@ -165,15 +168,17 @@
                                     et convallis metus volutpat id.
                                 </p>
                             </div>
-                            <div class="col-md-offset-1 col-md-4">
+                            <div class="col-md-4">
                                 <img src="image/fest02.jpg" class="imageFest">
                             </div>
                         </div>
-                        <div class="row">
+
+                        <div class="row fest">
+                            <h2>La restauration :</h2>
                             <div class="col-md-4">
                                 <img src="image/fest03.jpg" class="imageFest">
                             </div>
-                            <div class="col-md-offset-1 col-md-7 fest">
+                            <div class="col-md-8">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Morbi volutpat pellentesque felis sit amet ultrices.
@@ -184,47 +189,69 @@
                                 </p>
                             </div>
                         </div>
+
+                        <div class="row fest">
+                            <h2>Accès au festival :</h2>
+                            <iframe class="col-md-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.87355313663!2d2.3067663155231712!3d48.87968700716119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc+Monceau!5e0!3m2!1sfr!2sfr!4v1507618142265"
+                                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
 
                     <div class="container-fluid col-md-offset-1 col-md-10 pageProg hide" id="pageProgrammation">
                         <div class="row">
                             <div class="col-md-offset-2 col-md-8 prog">
-
+                                <table class="table table-bordered">
+                                    <caption>
+                                        <h2>La programmation proposée :</h2>
+                                    </caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Films</th>
+                                            <th>Horaire</th>
+                                            <th>Inscription</th>
+                                        </tr>
+                                    </thead>
+                                </table>
                             </div>
                         </div>
                     </div>
+
                     <div class="container-fluid col-md-offset-1 col-md-10 pageContact hide" id="pageContact">
                         <div class="row">
                             <div class="col-md-offset-2 col-md-8 contact">
+                                <h2>Pour nous contacter :</h2>
                                 <form>
                                     <div class="form-group">
                                         <label for="nom">Nom :</label>
                                         <input type="text" class="form-control" id="nom" placeholder="Entrer votre Nom">
                                     </div>
+                                    <div class="form-group">
+                                        <label for="prenom">Prénom :</label>
+                                        <input type="text" class="form-control" id="prenom" placeholder="Entrer votre Prénom">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email :</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Entrer votre E-mail">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message :</label>
+                                        <input type="text" class="form-control" id="message" placeholder="Entrer votre message">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Envoyer</button>
                                 </form>
-                                <div class="form-group">
-                                    <label for="prenom">Prénom :</label>
-                                    <input type="text" class="form-control" id="prenom" placeholder="Entrer votre Prénom">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email :</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Entrer votre E-mail">
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Message :</label>
-                                    <input type="text" class="form-control" id="message" placeholder="Entrer votre message">
-                                </div>
-                                <button type="submit" class="btn btn-primary">Envoyer</button>
                             </div>
                         </div>
                     </div>
+                </div>
 
                 <nav class="container-fluid col-sm-12 navbar-fixed-bottom" id="footer">
                     <ul class="col-xs-9 col-sm-9 col-md-9 col-lg-12">
                         <li>Copyright 2017 - Les Festivals</li>
                     </ul>
                 </nav>
-            </div>
+
             </div>
         </div>
         <script src="js/script.js"></script>
