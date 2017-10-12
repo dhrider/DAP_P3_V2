@@ -28,6 +28,9 @@ $(document).ready(function () {
         $('.pageContact').removeClass('hide');
     });
 
+    $('#btn').click(function () {
+        $('.modal').modal('show');
+    })
 });
 
 
