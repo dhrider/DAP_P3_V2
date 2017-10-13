@@ -73,6 +73,7 @@ nav {
 
 #titreEntete {
     margin-top: 2.5%;
+    font-size: 0.95em;
 }
 
 #imageAccueil {
@@ -138,6 +139,7 @@ th, td {
     text-align: center;
 }
 
+.table-bordered,
 .table-bordered > tbody > tr > td,
 .table-bordered > tbody > tr > th,
 .table-bordered > thead > tr > td,
@@ -158,9 +160,19 @@ tbody > tr:hover {
     height: 30px
 }
 
+
 @media screen and (min-width: 768px){
     iframe {
         height: 450px;
+    }
+
+    .container-fluid {
+        padding-right: 0;
+    }
+
+    .navbar-nav>li>a {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
