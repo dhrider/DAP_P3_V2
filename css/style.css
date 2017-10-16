@@ -1,3 +1,7 @@
+
+
+
+
 html {
     height: 100%;
 }
@@ -82,7 +86,7 @@ nav {
 }
 
 #entete {
-    margin-bottom: 115px;
+    margin-bottom: 50px;
 }
 
 
@@ -107,6 +111,14 @@ p {
 
 .modal-backdrop {
     z-index: -1;
+}
+
+.modal-content {
+    background-color: #9fcdff;
+}
+
+.modal {
+    margin-top: 75px;
 }
 
 .actu, .fest, .prog, .contact {
@@ -135,6 +147,10 @@ form {
     padding: 15px;
 }
 
+.prog {
+    margin-bottom: 10px;
+}
+
 th, td {
     text-align: center;
 }
@@ -145,10 +161,19 @@ th, td {
 .table-bordered > thead > tr > td,
 .table-bordered > thead > tr > th {
     border: 1px solid black;
+    font-size: 0.80em;
 }
 
 tbody > tr:hover {
     background-color: #9fcdff;
+}
+
+.modal-body {
+    display: flex;
+}
+
+.afficheFilm {
+    margin-left: 10px;
 }
 
 #footer
@@ -166,20 +191,11 @@ tbody > tr:hover {
         height: 450px;
     }
 
-    .container-fluid {
-        padding-right: 0;
+    .table-bordered,
+    .table-bordered > tbody > tr > td,
+    .table-bordered > tbody > tr > th,
+    .table-bordered > thead > tr > td,
+    .table-bordered > thead > tr > th {
+        font-size: 1em;
     }
-
-    .navbar-nav>li>a {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-
-@media screen and (min-width: 1024px){
-
-}
-
-@media screen and (min-width: 1440px){
-
 }

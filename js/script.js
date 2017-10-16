@@ -28,9 +28,17 @@ $(document).ready(function () {
         $('.pageContact').removeClass('hide');
     });
 
-    $('#btn').click(function () {
-        $('.modal').modal('show');
-    })
+    $('#lienActu01').click(function () {
+        $('#modalActu').modal('show');
+    });
+
+    $('#detailFilm01').click(function () {
+        $('#modalProg01').modal('show');
+    });
+
+    $('#btnFilm01').click(function () {
+        $('#modalReservation01').modal('show');
+    });
 });
 
 
